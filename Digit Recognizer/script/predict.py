@@ -38,6 +38,8 @@ def output(predictions, loc):
     
 if __name__ == "__main__":
     from load_data import feature_label_split
+    #from sklearn.cross_validation import train_test_split
+    from sklearn import tree
     is_knn = False
     features_train, labels_train = feature_label_split("../data/train.csv")
     if is_knn:
@@ -46,8 +48,13 @@ if __name__ == "__main__":
         loc = "../result/result_knn.csv"
     else:
         features_test, labels_test = feature_label_split("../data/test_labels_rf.csv")
+        clf = tree.DecisionTreeClassifier(random_state = 100)
+        loc = "../result/result_dt.csv"
+        """
         clf = RandomForestClassifier(n_estimators = 1000)
         loc = "../result/result_rf.csv"
+        """
+        
     predictions, score = predict(clf, features_train, labels_train, features_test, labels_test)
     print is_knn
     output(predictions, loc)
