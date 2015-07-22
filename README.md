@@ -1,4 +1,2 @@
-#Kaggle Competition: Handwritten Digit Recognition
-March 2015
-
-The goal for this project is to take an image of a handwritten digit, and identify what that digit is. The data for this project were taken from the MNIST dataset. In this project, python and related packages (numpy, pandas, sklearn, plt) were used to process the data, train the data and predict the results. Two built-in algorithms-k-nearest neighbors and random forest were performed for the predictions.
+#Kaggle Competitions
+I am trained as a scientist with professional skills for experimental designs, data analyses and presentations. I am always exciting and curious about data. I really enjoy in Kaggle competitions. By participating these competitions, I can pratice and polish my skills for data analyses. Here is my profile: [kaggle](https://www.kaggle.com/zhihui). You are always welcome to join as a team member for competitions.
